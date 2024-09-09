@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .labelInput{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="labelInput">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="John">
+        </div>
+
+        <div class="labelInput">
+            <h2>Qual destas é uma liguagem de marcação?</h2>
+            <p>
+                <input type="radio" name="linguagemDeMarcacao" id="linguagemDeMarcacao_1" value="HTML" />
+                <label for="linguagemDeMarcacao_1">HTML</label>
+              </p>
+              <p>
+                <input type="radio" name="linguagemDeMarcacao" id="linguagemDeMarcacao_2" value="PHP" />
+                <label for="linguagemDeMarcacao_2">PHP</label>
+              </p>
+              <p>
+                <input type="radio" name="linguagemDeMarcacao" id="linguagemDeMarcacao_3" value="JavaScript" />
+                <label for="linguagemDeMarcacao_3">JavaScript</label>
+              </p>
+        </div>
+
+        <div class="labelInput">
+
+           <div>
+            <input type="checkbox" name="termos" required style="text-decoration: solid;">
+            <strong>Li e aceitos os termos</strong>
+           </div>
+
+           <button style="width: fit-content;" type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
